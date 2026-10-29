@@ -22,20 +22,27 @@
     </header>
     <main id="conteudo-principal">
         <h1>Dados sobre países</h1>
-        <p>Esta página reunirá uma comparação de países usando informações públicas.</p>
+        <p>A tabela compara seis países, suas capitais, continentes, idiomas oficiais ou predominantes e a data de admissão na Organização das Nações Unidas (ONU). As datas são marcadas semanticamente com <code>&lt;time&gt;</code>.</p>
         <table>
-            <caption>Exemplo inicial de países</caption>
+            <caption>Seis países e sua relação com a ONU</caption>
             <thead>
-                <tr><th scope="col">País</th><th scope="col">Capital</th></tr>
+                <tr><th scope="col">País</th><th scope="col">Capital</th><th scope="col">Continente</th><th scope="col">Idioma(s)</th><th scope="col">Admissão na ONU</th></tr>
             </thead>
             <tbody>
-                <tr><th scope="row">Brasil</th><td>Brasília</td></tr>
-                <tr><th scope="row">Japão</th><td>Tóquio</td></tr>
+                <tr><th scope="row">Brasil</th><td>Brasília</td><td>América do Sul</td><td>Português</td><td><time datetime="1945-10-24">24/10/1945</time></td></tr>
+                <tr><th scope="row">Canadá</th><td>Ottawa</td><td>América do Norte</td><td>Inglês e francês</td><td><time datetime="1945-11-09">09/11/1945</time></td></tr>
+                <tr><th scope="row">China</th><td>Pequim</td><td>Ásia</td><td>Chinês padrão</td><td><time datetime="1945-10-24">24/10/1945</time></td></tr>
+                <tr><th scope="row">França</th><td>Paris</td><td>Europa</td><td>Francês</td><td><time datetime="1945-10-24">24/10/1945</time></td></tr>
+                <tr><th scope="row">Japão</th><td>Tóquio</td><td>Ásia</td><td>Japonês</td><td><time datetime="1956-12-18">18/12/1956</time></td></tr>
+                <tr><th scope="row">Alemanha</th><td>Berlim</td><td>Europa</td><td>Alemão</td><td><time datetime="1973-09-18">18/09/1973</time></td></tr>
             </tbody>
+            <tfoot><tr><th scope="row" colspan="4">Países apresentados na tabela</th><td>6</td></tr></tfoot>
         </table>
+        <p>Os dados ilustram a variedade geográfica e linguística. Três países da tabela foram admitidos na ONU em 24 de outubro de 1945; o Japão e a Alemanha ingressaram em datas posteriores.</p>
+        <p>Fonte principal: <a href="https://www.un.org/en/about-us/member-states" target="_blank" rel="noopener noreferrer">Organização das Nações Unidas — Estados-membros</a>.</p>
     </main>
     <footer>
-        <p>Desenvolvido por Guilherme Gon Wiemes — Turma Turma DSM03 - 2025 - 2ª Série — 2026.</p>
+        <p>Desenvolvido por Guilherme Gon Wiemes — Turma DSM03 - 2025 - 2ª Série | 2026.</p>
         <p>Projeto educacional fictício. A UNO não é uma organização real.</p>
     </footer>
 </body>

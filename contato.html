@@ -22,16 +22,45 @@
     </header>
     <main id="conteudo-principal">
         <h1>Contato</h1>
-        <p>Entre em contato com a secretaria fictícia da UNO.</p>
+        <p>Os dados abaixo são fictícios e foram criados apenas para demonstrar a estrutura HTML solicitada.</p>
         <address>
             Secretaria da UNO<br>
             Avenida das Nações Imaginárias, 100, Brasília — DF<br>
             <a href="mailto:contato@uno.example">contato@uno.example</a><br>
-            <a href="tel:+556130000000">+55 61 3000-0000</a>
+            <a href="tel:+554799999999">+55 61 3000-0000</a>
         </address>
+        <section>
+            <h2>Horário de atendimento</h2>
+            <dl>
+                <dt>Segunda a sexta-feira</dt><dd>9h às 17h</dd>
+                <dt>Sábados, domingos e feriados</dt><dd>Secretaria fechada.</dd>
+            </dl>
+        </section>
+        <p><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Consultar um mapa no OpenStreetMap</a> — o endereço informado é fictício.</p>
+        <section>
+            <h2>Envie uma mensagem</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <p><label for="nome-contato">Nome:</label><input type="text" id="nome-contato" name="nome" autocomplete="name" required></p>
+                    <p><label for="email-contato">E-mail:</label><input type="email" id="email-contato" name="email" autocomplete="email" required></p>
+                    <p><label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="problema">Problema de organização</option>
+                        </select>
+                    </p>
+                    <p><label for="mensagem">Mensagem:</label><textarea id="mensagem" name="mensagem" rows="5" maxlength="300" required></textarea></p>
+                </fieldset>
+                <button type="submit">Enviar mensagem</button>
+                <button type="reset">Limpar formulário</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>Desenvolvido por Guilherme Gon Wiemes — Turma Turma DSM03 - 2025 - 2ª Série — 2026.</p>
+        <p>Desenvolvido por Guilherme Gon Wiemes — Turma DSM03 - 2025 - 2ª Série | 2026.</p>
         <p>Projeto educacional fictício. A UNO não é uma organização real.</p>
     </footer>
 </body>
