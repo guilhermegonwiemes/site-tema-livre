@@ -22,34 +22,88 @@
     </header>
     <main id="conteudo-principal">
         <h1>Cadastro de participação</h1>
-        <p>Este formulário é uma simulação escolar. Não envia dados para uma organização real.</p>
+        <p>Use este formulário para simular a inscrição de uma delegação na UNO. Ele é apenas uma demonstração escolar: os dados não são enviados a uma organização real. Os campos obrigatórios são indicados pelo navegador.</p>
         <form action="#" method="post">
             <fieldset>
-                <legend>Dados do representante</legend>
-                <p><label for="nome">Nome do representante:</label><input type="text" id="nome" name="nome" autocomplete="name" required></p>
-                <p><label for="email">E-mail:</label><input type="email" id="email" name="email" autocomplete="email" required></p>
-                <p><label for="telefone">Telefone:</label><input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9()+ .-]{8,20}" title="Use de 8 a 20 caracteres: números, espaços, parênteses, +, ponto ou hífen."></p>
+                <legend>1. Dados do representante</legend>
+                <p>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9()+ .-]{8,20}" title="Digite de 8 a 20 caracteres usando números, espaços, parênteses, sinal de mais, ponto ou hífen.">
+                </p>
+                <p>
+                    <label for="nascimento">Data de nascimento do representante:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </p>
             </fieldset>
             <fieldset>
-                <legend>Informações da delegação</legend>
-                <p><label for="pais">País representado:</label><input type="text" id="pais" name="pais" required></p>
-                <p>Tipo de participação:</p>
-                <label for="observador"> <input type="radio" id="observador" name="participacao" value="observador" required> Observador</label>
-                <label for="delegado"> <input type="radio" id="delegado" name="participacao" value="delegado"> Delegado</label>
-                <label for="pesquisador"> <input type="radio" id="pesquisador" name="participacao" value="pesquisador"> Pesquisador</label>
+                <legend>2. Dados da delegação</legend>
+                <p>
+                    <label for="pais">País representado:</label>
+                    <input type="text" id="pais" name="pais" required>
+                </p>
+                <p>
+                    <label for="delegados">Número de integrantes da delegação (1 a 20):</label>
+                    <input type="number" id="delegados" name="delegados" min="1" max="20" value="1" required>
+                </p>
+                <p>Função pretendida:</p>
+                <p>
+                    <input type="radio" id="observador" name="participacao" value="observador" required>
+                    <label for="observador">Observador</label>
+                </p>
+                <p>
+                    <input type="radio" id="delegado" name="participacao" value="delegado">
+                    <label for="delegado">Delegado</label>
+                </p>
+                <p>
+                    <input type="radio" id="pesquisador" name="participacao" value="pesquisador">
+                    <label for="pesquisador">Pesquisador</label>
+                </p>
             </fieldset>
             <fieldset>
-                <legend>Preferências</legend>
-                <p><label for="tema">Tema de interesse:</label>
+                <legend>3. Interesses e confirmação</legend>
+                <p>
+                    <label for="tema">Tema principal de interesse:</label>
                     <select id="tema" name="tema" required>
                         <option value="">Selecione um tema</option>
                         <option value="meio-ambiente">Meio ambiente</option>
                         <option value="educacao">Educação</option>
                         <option value="cultura">Cultura</option>
+                        <option value="tecnologia">Tecnologia</option>
                     </select>
                 </p>
-                <p><label for="comentario">Observações (até 300 caracteres):</label><textarea id="comentario" name="comentario" rows="4" maxlength="300"></textarea></p>
-                <p><label for="termos"><input type="checkbox" id="termos" name="termos" value="aceito" required> Confirmo que entendi que este cadastro é fictício.</label></p>
+                <p>
+                    <label for="orcamento">Orçamento fictício para a delegação (unidades UNO):</label>
+                    <input type="number" id="orcamento" name="orcamento" min="0" max="100000" step="0.50" value="100.00">
+                </p>
+                <p>Outros temas de interesse (marque os que desejar):</p>
+                <p>
+                    <input type="checkbox" id="interesse-ciencia" name="interesses" value="ciencia">
+                    <label for="interesse-ciencia">Ciência</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="interesse-esporte" name="interesses" value="esporte">
+                    <label for="interesse-esporte">Esporte</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="interesse-historia" name="interesses" value="historia">
+                    <label for="interesse-historia">História</label>
+                </p>
+                <p>
+                    <label for="observacoes">Observações (máximo de 300 caracteres):</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" maxlength="300"></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                    <label for="termos">Confirmo que entendi que a UNO é fictícia e aceito participar desta simulação.</label>
+                </p>
             </fieldset>
             <button type="submit">Enviar solicitação</button>
             <button type="reset">Limpar formulário</button>

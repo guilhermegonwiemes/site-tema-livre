@@ -22,37 +22,56 @@
     </header>
     <main id="conteudo-principal">
         <h1>Contato</h1>
-        <p>Os dados abaixo são fictícios e foram criados apenas para demonstrar a estrutura HTML solicitada.</p>
-        <address>
-            Secretaria da UNO<br>
-            Avenida das Nações Imaginárias, 100, Brasília — DF<br>
-            <a href="mailto:contato@uno.example">contato@uno.example</a><br>
-            <a href="tel:+554799999999">+55 61 3000-0000</a>
-        </address>
+        <p>Esta página apresenta dados de contato inventados para demonstrar o uso de elementos HTML. Não envie informações pessoais reais pelo formulário: ele não possui um serviço de processamento conectado.</p>
         <section>
-            <h2>Horário de atendimento</h2>
+            <h2>Secretaria da UNO</h2>
+            <address>
+                Secretaria fictícia da Unorganized Nations Organization<br>
+                Avenida das Nações Imaginárias, 100<br>
+                Brasília — DF, CEP 70000-000<br>
+                E-mail: <a href="mailto:contato@uno.secretaria">contato@uno.secretaria</a><br>
+                Telefone: <a href="tel:+554799999999">+55 47 9999-9999</a>
+            </address>
+            <p>O endereço é fictício. Para visualizar uma ferramenta de mapas, visite o <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>, sem interpretar o mapa como localização real da UNO.</p>
+        </section>
+        <section>
+            <h2>Horário de atendimento fictício</h2>
             <dl>
-                <dt>Segunda a sexta-feira</dt><dd>9h às 17h</dd>
-                <dt>Sábados, domingos e feriados</dt><dd>Secretaria fechada.</dd>
+                <dt>Segunda a sexta-feira</dt>
+                <dd>Das 9h às 17h.</dd>
+                <dt>Sábados</dt>
+                <dd>Das 9h às 12h, se a reunião não for remarcada.</dd>
+                <dt>Domingos e feriados</dt>
+                <dd>Sem atendimento.</dd>
             </dl>
         </section>
-        <p><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Consultar um mapa no OpenStreetMap</a> — o endereço informado é fictício.</p>
         <section>
             <h2>Envie uma mensagem</h2>
             <form action="#" method="post">
                 <fieldset>
-                    <legend>Mensagem</legend>
-                    <p><label for="nome-contato">Nome:</label><input type="text" id="nome-contato" name="nome" autocomplete="name" required></p>
-                    <p><label for="email-contato">E-mail:</label><input type="email" id="email-contato" name="email" autocomplete="email" required></p>
-                    <p><label for="assunto">Assunto:</label>
+                    <legend>Formulário de contato</legend>
+                    <p>
+                        <label for="nome-contato">Nome:</label>
+                        <input type="text" id="nome-contato" name="nome" autocomplete="name" required>
+                    </p>
+                    <p>
+                        <label for="email-contato">E-mail:</label>
+                        <input type="email" id="email-contato" name="email" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="assunto">Assunto:</label>
                         <select id="assunto" name="assunto" required>
-                            <option value="">Selecione</option>
+                            <option value="">Selecione um assunto</option>
                             <option value="duvida">Dúvida</option>
                             <option value="sugestao">Sugestão</option>
-                            <option value="problema">Problema de organização</option>
+                            <option value="correcao">Correção de informação</option>
+                            <option value="organizacao">Problema de organização</option>
                         </select>
                     </p>
-                    <p><label for="mensagem">Mensagem:</label><textarea id="mensagem" name="mensagem" rows="5" maxlength="300" required></textarea></p>
+                    <p>
+                        <label for="mensagem">Mensagem (máximo de 300 caracteres):</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" maxlength="300" required></textarea>
+                    </p>
                 </fieldset>
                 <button type="submit">Enviar mensagem</button>
                 <button type="reset">Limpar formulário</button>
