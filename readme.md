@@ -56,7 +56,7 @@ Os cinco arquivos (`index.html`, `sobre.html`, `dados.html`, `cadastro.html` e `
 
 ### Lighthouse
 
-Até o momento, não consegui realizar os testes no lighthouse, ao clicar no botão de gerar report, o lighthouse não faz nada...
+Todos os testes do lighthouse foram bem sucedidos. Vale dizer que, em todos eles, as páginas html ficaram 1 ponto de distância da pontuação máxima por conta de espaçamento, já que o trabalho proíbe utilizar <br>, era impossível tirar nota máxima.
 
 
 ### Evidências da atividade
